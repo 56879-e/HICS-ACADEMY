@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H.I.C.S Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="36189146_239939809925229_65198854d93495136256_n.png" alt="H.I.C.S Logo" height="40">
+            </div>
+            <div class="nav-links">
+                <a href="#home">الرئيسية</a>
+                <a href="#about">عن المعهد</a>
+                <a href="courses.html">الدورات</a>
+                <a href="specializations.html">التخصصات</a>
+                <a href="reserve.html">الحجز</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="intro-text">WELCOME To H.I.C.S Academy!</h1>
+                    <p class="hero-subtitle">نقدم تعليماً متميزاً يواكب التطورات العالمية</p>
+                    <div class="cta-buttons">
+                        <button class="btn primary-btn" onclick="location.href='reserve.html'">
+                            <i class="fas fa-calendar-check"></i>
+                             حجز الدورات
+                        </button>
+                        <button class="btn secondary-btn" onclick="location.href='specializations.html'">
+                            <i class="fas fa-graduation-cap"></i>
+                            ابدأ التعلم
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="8746464684684.png" alt="H.I.C.S Academy" class="welcome-image">
+                </div>
+            </div>
+        </section>
+
+        <section class="interactive-image-section">
+            <div class="image-container">
+                <img src="WhatsApp Image 2025-04-20 at 00.29.29_d9765d2c.jpg" alt="حرم المعهد" class="interactive-img" id="campusImage">
+                <div class="image-overlay">
+                    <h2>اكتشف حرمنا التعليمي</h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="institute-title">
+            <div class="title-container">
+                <h2 class="institute-name"> نبذة عنا  </h2>
+            </div>
+        </section>
+
+        <section class="features" id="about">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-book-reader fa-2x"></i>
+                    <h3>تعليم عالي الجودة</h3>
+                    <p>نقدم تعليماً متميزاً معتمداً من وزارة التعليم العالي </p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-users fa-2x"></i>
+                    <h3>كادر تدريسي متميز</h3>
+                    <p>نخبة من أفضل الأساتذة والمحاضرين ذوي الخبرة العالية</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-laptop-code fa-2x"></i>
+                    <h3>تطبيق عملي</h3>
+                    <p>نركز على الجانب العملي والتطبيقي في جميع برامجنا التعليمية</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-certificate fa-2x"></i>
+                    <h3>شهادة معتمدة</h3>
+                    <p>نقدم شهادات معتمدة ومعترف بها في جميع برامجنا التعليمية</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section contact-section">
+                    <h3>تواصل معنا</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@hics.edu.eg</p>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/share/1927Aigpww/" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/company/higher-institute-for-commercial-sciences-el-mahala-el-kobra/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section quick-links">
+                    <h3>روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="courses.html">الدورات</a></li>
+                        <li><a href="specializations.html">التخصصات</a></li>
+                        <li><a href="reserve.html">الحجز</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section address-section">
+                    <h3>العنوان</h3>
+                    <p class="address"><i class="fas fa-map-marker-alt"></i> المحلــــــة الكبـــــــــرى - طريــــــق المحلــــــة طنطـــــــا الكيلـــــــــو 6 - بجـــــــوار جرانــــــد بابيلــــــون</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>جميع الحقوق محفوظة &copy; Higher Institute of Commercial Sciences</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.style.background = 'rgba(255, 255, 255, 0.95)';
+                nav.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+            } else {
+                nav.style.background = 'var(--background)';
+                nav.style.boxShadow = 'none';
+            }
+        });
+
+        // Interactive image zoom functionality
+        const campusImage = document.getElementById('campusImage');
+        const imageContainer = document.querySelector('.image-container');
+
+        imageContainer.addEventListener('click', function() {
+            if (campusImage.style.transform === 'scale(1.5)') {
+                campusImage.style.transform = 'scale(1)';
+                imageContainer.style.cursor = 'pointer';
+            } else {
+                campusImage.style.transform = 'scale(1.5)';
+                imageContainer.style.cursor = 'zoom-out';
+            }
+        });
+    </script>
+</body>
+</html> 
